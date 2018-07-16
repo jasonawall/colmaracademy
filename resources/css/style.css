@@ -1,0 +1,49 @@
+/* Universal Styles */
+
+body {
+  background: grey;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+
+.navbar {
+  background-color: white;
+  color: #424242;
+  height: 64px;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 16px 24px;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.logo_text {
+  padding-left: 8px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 16px 8px;
+}
+
+nav li:nth-child(4n) {
+  padding-right:24px;
+}
+
+/* main banner styles */
