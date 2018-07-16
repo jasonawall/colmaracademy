@@ -9,6 +9,11 @@ body {
   margin: 0 auto;
 }
 
+.section_banner {
+  margin: 32px auto;
+  text-align: center;
+}
+
 /* Header Styles */
 
 .navbar {
@@ -60,6 +65,18 @@ nav li:nth-child(4n) {
   align-items: flex-start;
 }
 
+.t_banner .container {
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* .sl_banner .container {
+  background-color: #757575;
+} */
+
+
+
 .banner_image {
   width: 60%;
   padding: 32px 24px;
@@ -85,8 +102,55 @@ nav li:nth-child(4n) {
   border: 1px solid #BDBDBD;
 }
 
+/* sl */
+
+.sl_banner .container {
+  background-color: #757575;
+  height: auto;
+  margin: 0 auto;
+}
+
+.sl_blocks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px 72px 32px 72px;
+
+}
+
+.sl_col {
+  width: 30%;
+  height: 150px;
+  margin: 0px 16px 172px 16px;
+
+}
+
+.sl_col_text {
+  background-color: white;
+  height: 150px;
+}
+
+.sl_col img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .card_vertical {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border: 1px solid #BDBDBD;
+} */
+
 .card:nth-child(3n){
   background-color: #BDBDBD;
+}
+
+.t_banner .card:nth-child(1){
+  background-color: red;
 }
 
 .card img {
