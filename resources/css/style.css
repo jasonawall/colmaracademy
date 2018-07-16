@@ -54,11 +54,50 @@ nav li:nth-child(4n) {
   align-items: center;
 }
 
+.kp_banner .container {
+  background-color: #9E9E9E;
+  display: flex;
+  align-items: flex-start;
+}
+
 .banner_image {
   width: 60%;
-  padding: 32px 42px;
+  padding: 32px 24px;
+}
+
+.banner_image img {
+  width: 100%;
 }
 
 .banner_text {
   width: 40%;
+  display: flex;
+  flex-direction: column;
 }
+
+.banner_text .text_right {
+  padding: 32px 60px 32px 24px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #BDBDBD;
+}
+
+.card:nth-child(3n){
+  background-color: #BDBDBD;
+}
+
+.card img {
+  width: 35%;
+  height: 35%;
+  padding: 16px;
+}
+
+.card_text{
+  width: 65%;
+  height: auto;
+}
+
+/* keep practicing */
