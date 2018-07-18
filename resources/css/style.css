@@ -1,21 +1,146 @@
 /* Universal Styles */
+html {
+  font-size: 16px;
+}
+
 
 body {
-  background: grey;
+  background: #4a4a4a;
+  font-family: "Georgia", sans-serif;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .section_header {
-  height:64px;
+  height:100%;
   margin: 0 auto;
+  padding: 32px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #aca8e8;
+}
+
+#start_learning{
+  background-color: #eaebec;
+}
+
+#thesis_exhibit{
+  background-color: #f3f5f5;
+}
+
+/* Universal Typography Styles */
+
+a {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.link_inline {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #4a90e2;
+    line-height: 1.6rem;
+    letter-spacing: 1.1px;
+    padding: 5px 0px 5px 0;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  color: #4a4a4a;
+  line-height: 2.2rem;
+  padding: 15px 0px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  line-height: 1.4rem;
+  padding: 10px 0;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: #4a4a4a;
+}
+
+.thesis h3 {
+  padding: 20px 0px;
+}
+
+h5 {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  color: #4a4a4a;
+  line-height: 1.6rem;
+  letter-spacing: 1.1px;
+  padding: 15px 0px 45px 0;
+}
+
+.thesis h5 {
+  padding: 0px;
+}
+
+.card_wide_text h5 {
+  padding: 5px 0px 5px 0;
+  letter-spacing: 1px;
+}
+
+.card_tall_text h5 {
+  padding: 5px 0px 5px 0;
+  letter-spacing: 1px;
+}
+
+.card_tall_text h3 {
+  padding: 0px 0px 10px 0;
+}
+
+h6 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #4a4a4a;
+}
+
+.link_button {
+  background-color: #4a4a4a;
+  width: 100%;
+  height: 60px;
+  margin: 15px auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+}
+
+.link_button a {
+
+  color: #ffffff;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  height: auto;
+  margin: 0 auto;
+
+}
+
+.logo_text{
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: #424242;
+}
+
+.logo_text span{
+  font-weight: lighter;
+  color: #9b9b9b;
 }
 
 /* Header Styles */
@@ -27,7 +152,19 @@ body {
 }
 
 #footer {
-  border-top: solid 1px #eeeeee;
+  border-top: solid 1px #e0e2e2;
+  background-color: #f3f5f5;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+#footer nav {
+  margin-right: 20px;
+}
+
+#footer a {
+  font-size: 0.8rem;
 }
 
 .bar .container {
@@ -84,14 +221,15 @@ nav li:nth-child(4n) {
 }
 
 .banner_text {
-  padding: 32px 60px 32px 24px;
+  padding: 32px 120px 32px 24px;
 }
 
 /* Wide Card Styles */
 .card_wide {
   display: flex;
   align-items: center;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #e0e2e2;
+  justify-content: flex-start;
 }
 
 .card_wide img {
@@ -103,29 +241,70 @@ nav li:nth-child(4n) {
 .card_wide_text{
   width: 65%;
   height: auto;
+  padding-right: 10px;
 }
 
 
 /* Tall Card Styles */
-.card_grid {
+.card_grid_tall {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   padding: 0px 72px 32px 72px;
-
 }
 
 .card_tall {
   width: 30%;
   height: 150px;
-  margin: 0px 16px 172px 16px;
+  margin: 0px 16px 226px 16px;
 
+}
+
+@media only screen and (max-width: 1200px) {
+  .card_grid_tall {
+    padding: 0px 18px 32px 18px;
+  }
+  .card_tall{
+    width: 28%;
+    margin: 0px 14px 226px 14px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card_grid_tall {
+    padding: 0px 12px 32px 12px;
+  }
+  .card_tall{
+    width: 46%;
+    margin: 0px 12px 216px 12px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card_grid_tall {
+    padding: 0px 6px 32px 6px;
+  }
+  .card_tall{
+    width: 42%;
+    margin: 0px 12px 216px 12px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card_grid_tall {
+    padding: 0px 6px 32px 6px;
+  }
+  .card_tall{
+    width: 90%;
+    margin: 0px 12px 216px 12px;
+  }
 }
 
 .card_tall_text {
   background-color: white;
   height: 150px;
+  padding: 20px 20px;
 }
 
 .card_tall img{
@@ -137,28 +316,37 @@ nav li:nth-child(4n) {
 
 /* Hero Banner */
 .hero .container {
-  background-color: #DADADA;
+  background-color: #d8d8d8;
 }
 
 /* Keep Practicing */
 .keep_practicing .container {
-  background-color: #9E9E9E;
+  background-color: #f3f5f5;
+  align-items: flex-start;
+}
+
+.keep_practicing .banner_right {
+  padding-top: 32px;
 }
 
 .card_wide:nth-child(3n){
-  background-color: #BDBDBD;
+  background-color: #d8d8d8;
 }
 
 /* Start Learning */
 .start_learning .container {
-  background-color: #757575;
+  background-color: #eaebec;
 }
 
 /* Thesis Exhibit */
 .thesis .container {
-  background-color: #ffffff;
+  background-color: #f3f5f5;
+  align-items: flex-start;
+}
+.thesis .banner_left {
+  padding-top: 0px;
 }
 
 .thesis .card_wide:nth-child(1){
-  background-color: red;
+  background-color: #d8d8d8;
 }
