@@ -9,49 +9,47 @@ body {
   margin: 0 auto;
 }
 
-.section_banner {
-  margin: 32px auto;
-  text-align: center;
+.section_header {
+  height:64px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #aca8e8;
 }
 
 /* Header Styles */
 
-.navbar {
+.bar {
   background-color: white;
   color: #424242;
   height: 64px;
 }
 
-.footbar {
-  background-color: white;
-  color: #424242;
-  height: 64px;
+#footer {
   border-top: solid 1px #eeeeee;
 }
 
-.footbar .container {
+.bar .container {
   display: flex;
   align-items: center;
 }
 
-.navbar .container {
+.bar .container {
   display: flex;
   align-items: center;
 }
 
-.logo {
+.bar_left {
   display: flex;
   align-items: center;
   flex-grow: 1;
   padding: 16px 24px;
 }
 
-.logo img {
+.bar_left img {
   height: 32px;
-}
-
-.logo_text {
-  padding-left: 8px;
+  padding-right: 8px;
 }
 
 nav li {
@@ -63,66 +61,53 @@ nav li:nth-child(4n) {
   padding-right:24px;
 }
 
-/* main banner styles */
+/* Global Banner Styles */
 
 .banner .container {
-  background-color: #DADADA;
   display: flex;
   align-items: center;
 }
 
-.kp_banner .container {
-  background-color: #9E9E9E;
-  display: flex;
-  align-items: flex-start;
-}
-
-.t_banner .container {
-  background-color: #ffffff;
-  display: flex;
-  align-items: flex-start;
-}
-
-/* .sl_banner .container {
-  background-color: #757575;
-} */
-
-
-
-.banner_image {
+.banner_left {
   width: 60%;
   padding: 32px 24px;
 }
 
-.banner_image img {
+.banner_left img {
   width: 100%;
 }
 
-.banner_text {
+.banner_right {
   width: 40%;
   display: flex;
   flex-direction: column;
 }
 
-.banner_text .text_right {
+.banner_text {
   padding: 32px 60px 32px 24px;
 }
 
-.card {
+/* Wide Card Styles */
+.card_wide {
   display: flex;
   align-items: center;
   border: 1px solid #BDBDBD;
 }
 
-/* sl */
-
-.sl_banner .container {
-  background-color: #757575;
-  height: auto;
-  margin: 0 auto;
+.card_wide img {
+  width: 35%;
+  height: 35%;
+  padding: 16px;
 }
 
-.sl_blocks {
+.card_wide_text{
+  width: 65%;
+  height: auto;
+}
+
+
+/* Tall Card Styles */
+.card_grid {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,49 +116,49 @@ nav li:nth-child(4n) {
 
 }
 
-.sl_col {
+.card_tall {
   width: 30%;
   height: 150px;
   margin: 0px 16px 172px 16px;
 
 }
 
-.sl_col_text {
+.card_tall_text {
   background-color: white;
   height: 150px;
 }
 
-.sl_col img{
+.card_tall img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* .card_vertical {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  border: 1px solid #BDBDBD;
-} */
 
-.card:nth-child(3n){
+/* Hero Banner */
+.hero .container {
+  background-color: #DADADA;
+}
+
+/* Keep Practicing */
+.keep_practicing .container {
+  background-color: #9E9E9E;
+}
+
+.card_wide:nth-child(3n){
   background-color: #BDBDBD;
 }
 
-.t_banner .card:nth-child(1){
+/* Start Learning */
+.start_learning .container {
+  background-color: #757575;
+}
+
+/* Thesis Exhibit */
+.thesis .container {
+  background-color: #ffffff;
+}
+
+.thesis .card_wide:nth-child(1){
   background-color: red;
 }
-
-.card img {
-  width: 35%;
-  height: 35%;
-  padding: 16px;
-}
-
-.card_text{
-  width: 65%;
-  height: auto;
-}
-
-/* keep practicing */
