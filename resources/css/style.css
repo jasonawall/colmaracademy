@@ -412,7 +412,7 @@ nav li:nth-child(4n) {
   }
 
   #mobile_cards {
-    border-bottom: 1px solid #E0E2E2;
+    border-bottom: 2px solid #455A64;
   }
 
   #mobile_cards .card_wide {
@@ -420,6 +420,7 @@ nav li:nth-child(4n) {
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+    background-color: #37474F;
   }
 
   #mobile_cards .card_wide img {
@@ -461,21 +462,21 @@ nav li:nth-child(4n) {
 
   /* Keep Practicing Mobile */
   .keep_practicing .container {
-    background-color: #FFFFFF;
+    background-color: #37474F;
   }
 
   /* Start Learning Mobile */
   #start_learning {
-    background-color: #ffffff;
+    background-color: #263238;
   }
 
   .start_learning .container {
-    background-color: #ffffff;
+    background-color: #263238;
   }
 
   /* Thesis Mobile */
   #thesis_exhibit {
-    background-color: #ffffff;
+    background-color: #37474F;
   }
 
   .thesis .banner_left {
