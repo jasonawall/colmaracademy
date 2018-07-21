@@ -228,7 +228,6 @@ nav li:nth-child(4n) {
 .card_wide {
   display: flex;
   align-items: center;
-  border: 1px solid #e0e2e2;
   justify-content: flex-start;
 }
 
@@ -289,10 +288,6 @@ nav li:nth-child(4n) {
   padding-top: 32px;
 }
 
-.card_wide:nth-child(3n){
-  background-color: #d8d8d8;
-}
-
 /* Start Learning */
 .start_learning .container {
   background-color: #eaebec;
@@ -317,9 +312,29 @@ nav li:nth-child(4n) {
 
 /* Responsive Styles */
 
+@media only screen and (min-width: 401px){
+  .card_wide:nth-child(3n){
+    background-color: #d8d8d8;
+  }
+
+  .card_wide {
+    border: 1px solid #e0e2e2;
+  }
+}
 
 
 
+/* NAV */
+
+@media only screen and (min-width: 401px){
+  #nav_mobile{
+    display: none;
+  }
+
+  #mobile_cards {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 400px) {
 
@@ -338,8 +353,6 @@ nav li:nth-child(4n) {
     margin: 16px auto;
     padding: 0px 36px;
     vertical-align: middle;
-  }
-
   }
 
   /* HERO */
@@ -362,42 +375,58 @@ nav li:nth-child(4n) {
   }
 
   .banner_text {
-    padding: 32px 32px 32px 24px;
+    padding: 32px 16px;
+  }
+
+  .banner_text h1 {
+    padding: 0px;
+  }
+
+  .banner_text h2 {
+    padding: 32px 0px 24px 0px;
+  }
+
+  .link_button {
+    margin: 0px;
   }
 
 
   /* KP */
-  .keep_practicing .banner_left {
+  #large_cards {
     display: none;
   }
 
-  .keep_practicing .banner_right {
+  #mobile_cards {
+    border-bottom: 1px solid #e0e2e2;
+    background-color: #ffffff;
+  }
+
+  #mobile_cards .card_wide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+  }
+
+  #mobile_cards .card_wide img {
     width: 100%;
+    height: 100%;
+    padding: 16px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  #mobile_cards .card_wide_text{
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+
   }
 
   /* SL */
 
-  @media only screen and (max-width: 1200px) {
-    .card_grid_tall {
-      padding: 0px 18px 32px 18px;
-    }
-    .card_tall{
-      width: 28%;
-      margin: 0px 14px 226px 14px;
-    }
-  }
-
-  @media only screen and (max-width: 900px) {
-    .card_grid_tall {
-      padding: 0px 12px 32px 12px;
-    }
-    .card_tall{
-      width: 46%;
-      margin: 0px 12px 216px 12px;
-    }
-  }
-
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 400px) {
     .card_grid_tall {
       padding: 0px 6px 32px 6px;
     }
@@ -409,16 +438,34 @@ nav li:nth-child(4n) {
 
   @media only screen and (max-width: 400px) {
 
+    .section_header {
+      padding: 32px 0px 16px 0px;
+
+    }
+
+    #start_learning{
+      background-color: #ffffff;
+    }
+
+    #thesis_exhibit{
+      background-color: #ffffff;
+    }
+
+    .start_learning .container {
+      background-color: #ffffff;
+    }
+
     .card_tall{
       width: 90%;
       height: auto;
-      margin: 8px 0px;
+      margin: 0px 0px 8px 0px;
 
     }
 
     .card_tall_text {
       height: auto;
       padding: 16px 16px 24px 16px;
+      background-color: #eaebec;
     }
 
     .card_tall img {
