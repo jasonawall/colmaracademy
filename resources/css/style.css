@@ -351,7 +351,7 @@ nav li:nth-child(4n) {
     display: inline-block;
     text-align: center;
     margin: 16px auto;
-    padding: 0px 34px;
+    padding: 0px 36px;
     vertical-align: middle;
   }
 
@@ -379,7 +379,7 @@ nav li:nth-child(4n) {
   }
 
   .banner_text h1 {
-    padding: 0px 16px 0px 0px;
+    padding: 0px;
   }
 
   .banner_text h2 {
@@ -396,9 +396,12 @@ nav li:nth-child(4n) {
     display: none;
   }
 
+  .keep_practicing .container {
+    background-color: #ffffff;
+  }
+
   #mobile_cards {
     border-bottom: 1px solid #e0e2e2;
-    background-color: #ffffff;
   }
 
   #mobile_cards .card_wide {
@@ -429,7 +432,6 @@ nav li:nth-child(4n) {
   @media only screen and (max-width: 400px) {
     .card_grid_tall {
       padding: 0px 6px 32px 6px;
-      border-bottom: 1px solid #e0e2e2;
     }
     .card_tall{
       width: 42%;
