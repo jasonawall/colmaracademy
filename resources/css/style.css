@@ -4,52 +4,15 @@ html {
 }
 
 body {
-  background: #4a4a4a;
+  background: #4A4A4A;
   font-family: "Georgia", sans-serif;
 }
 
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.section_header {
-  height:100%;
-  margin: 0 auto;
-  padding: 32px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-#thesis_exhibit{
-  background-color: #f3f5f5;
-}
-
-/* Universal Typography Styles */
-
-a {
-  font-size: 1rem;
-  font-weight: normal;
-  color: #4a4a4a;
-  text-decoration: none;
-}
-
-.link_inline {
-    font-size: 1rem;
-    font-weight: lighter;
-    color: #4a90e2;
-    line-height: 1.6rem;
-    letter-spacing: 1.1px;
-    padding: 5px 0px 5px 0;
-}
-
+/* Typography Styles */
 h1 {
   font-size: 2.4rem;
   font-weight: bolder;
-  color: #4a4a4a;
+  color: #4A4A4A;
   line-height: 2.2rem;
   padding: 15px 0px;
 }
@@ -57,7 +20,7 @@ h1 {
 h2 {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #4a4a4a;
+  color: #4A4A4A;
   line-height: 1.4rem;
   padding: 10px 0;
 }
@@ -65,48 +28,43 @@ h2 {
 h3 {
   font-size: 1.1rem;
   font-weight: bolder;
-  color: #4a4a4a;
-}
-
-.thesis h3 {
-  padding: 20px 0px;
+  color: #4A4A4A;
 }
 
 h5 {
   font-size: 0.9rem;
   font-weight: lighter;
-  color: #4a4a4a;
+  color: #4A4A4A;
   line-height: 1.6rem;
   letter-spacing: 1.1px;
   padding: 15px 0px 45px 0;
 }
 
-.thesis h5 {
-  padding: 0px;
-}
-
-.card_wide_text h5 {
-  padding: 5px 0px 5px 0;
-  letter-spacing: 1px;
-}
-
-.card_tall_text h5 {
-  padding: 5px 0px 5px 0;
-  letter-spacing: 1px;
-}
-
-.card_tall_text h3 {
-  padding: 0px 0px 10px 0;
-}
-
 h6 {
   font-size: 0.8rem;
   font-weight: normal;
-  color: #4a4a4a;
+  color: #4A4A4A;
+}
+
+/* Hyperlink Styles */
+a {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #4A4A4A;
+  text-decoration: none;
+}
+
+.link_inline {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #4A90E2;
+  line-height: 1.6rem;
+  letter-spacing: 1.1px;
+  padding: 5px 0px 5px 0;
 }
 
 .link_button {
-  background-color: #4a4a4a;
+  background-color: #4A4A4A;
   width: 100%;
   height: 60px;
   margin: 15px auto;
@@ -119,83 +77,28 @@ h6 {
 }
 
 .link_button a {
-
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 15px 20px;
   font-size: 1.2rem;
   font-weight: normal;
   height: auto;
   margin: 0 auto;
-
 }
 
-.logo_text{
-  font-size: 1.4rem;
-  font-weight: bolder;
-  color: #424242;
+/* Section, Container, and Banner Styles */
+.section_header {
+  height: 100%;
+  margin: 0 auto;
+  padding: 32px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo_text span{
-  font-weight: lighter;
-  color: #9b9b9b;
-}
-
-/* Header Styles */
-
-.bar {
-  background-color: white;
-  color: #424242;
-  height: 64px;
-}
-
-#footer {
-  border-top: solid 1px #e0e2e2;
-  background-color: #f3f5f5;
+.container {
   max-width: 100%;
   margin: 0 auto;
-  font-size: 0.8rem;
 }
-
-#footer nav {
-  margin-right: 20px;
-}
-
-#footer a {
-  font-size: 0.8rem;
-}
-
-.bar .container {
-  display: flex;
-  align-items: center;
-}
-
-.bar .container {
-  display: flex;
-  align-items: center;
-}
-
-.bar_left {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  padding: 16px 24px;
-}
-
-.bar_left img {
-  height: 32px;
-  padding-right: 8px;
-}
-
-nav li {
-  display: inline-block;
-  padding: 16px 8px;
-}
-
-nav li:nth-child(4n) {
-  padding-right:24px;
-}
-
-/* Global Banner Styles */
 
 .banner .container {
   display: flex;
@@ -221,7 +124,7 @@ nav li:nth-child(4n) {
   padding: 32px 120px 32px 24px;
 }
 
-/* Wide Card Styles */
+/* Card Wide Styles */
 .card_wide {
   display: flex;
   align-items: center;
@@ -234,14 +137,27 @@ nav li:nth-child(4n) {
   padding: 16px;
 }
 
-.card_wide_text{
+.card_wide_text {
   width: 65%;
   height: auto;
   padding-right: 10px;
 }
 
+.card_wide_text h5 {
+  padding: 5px 0px 5px 0;
+  letter-spacing: 1px;
+}
 
-/* Tall Card Styles */
+.card_tall_text h5 {
+  padding: 5px 0px 5px 0;
+  letter-spacing: 1px;
+}
+
+.card_tall_text h3 {
+  padding: 0px 0px 10px 0;
+}
+
+/* Card Tall Styles */
 .card_grid_tall {
   display: flex;
   align-items: center;
@@ -254,7 +170,6 @@ nav li:nth-child(4n) {
   width: 30%;
   height: 150px;
   margin: 0px 16px 226px 16px;
-
 }
 
 .card_tall_text {
@@ -263,21 +178,71 @@ nav li:nth-child(4n) {
   padding: 20px 20px;
 }
 
-.card_tall img{
+.card_tall img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Header Styles */
+.bar {
+  background-color: white;
+  color: #424242;
+  height: 64px;
+}
+
+.bar .container {
+  display: flex;
+  align-items: center;
+}
+
+.bar .container {
+  display: flex;
+  align-items: center;
+}
+
+.bar_left {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 16px 24px;
+}
+
+.bar_left img {
+  height: 32px;
+  padding-right: 8px;
+}
+
+/* Logo Styles */
+.logo_text {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: #424242;
+}
+
+.logo_text span {
+  font-weight: lighter;
+  color: #9B9B9B;
+}
+
+/* Navigation Styles */
+nav li {
+  display: inline-block;
+  padding: 16px 8px;
+}
+
+nav li:nth-child(4n) {
+  padding-right:24px;
+}
 
 /* Hero Banner */
 .hero .container {
-  background-color: #d8d8d8;
+  background-color: #D8D8D8;
 }
 
 /* Keep Practicing */
 .keep_practicing .container {
-  background-color: #f3f5f5;
+  background-color: #F3F5F5;
   align-items: flex-start;
 }
 
@@ -287,58 +252,64 @@ nav li:nth-child(4n) {
 
 /* Start Learning */
 .start_learning .container {
-  background-color: #eaebec;
+  background-color: #EAEBEC;
 }
 
-#start_learning{
-  background-color: #eaebec;
+#start_learning {
+  background-color: #EAEBEC;
 }
 
 /* Thesis Exhibit */
+#thesis_exhibit {
+  background-color: #F3F5F5;
+}
+
 .thesis .container {
-  background-color: #f3f5f5;
+  background-color: #F3F5F5;
   align-items: flex-start;
 }
 .thesis .banner_left {
   padding-top: 0px;
 }
 
-.thesis .card_wide:nth-child(1){
-  background-color: #d8d8d8;
+.thesis h3 {
+  padding: 20px 0px;
+}
+
+.thesis h5 {
+  padding: 0px;
+}
+
+.thesis .card_wide:nth-child(1) {
+  background-color: #D8D8D8;
 }
 
 .mobile_nav {
   flex-direction: row;
 }
 
+/* Footer Styles */
+#footer {
+  border-top: solid 1px #E0E2E2;
+  background-color: #F3F5F5;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+#footer nav {
+  margin-right: 20px;
+}
+
+#footer a {
+  font-size: 0.8rem;
+}
+
 /* Responsive Styles */
-
-@media only screen and (min-width: 401px){
-  .card_wide:nth-child(3n){
-    background-color: #d8d8d8;
-  }
-
-  .card_wide {
-    border: 1px solid #e0e2e2;
-  }
-}
-
-
-
-/* NAV */
-
-@media only screen and (min-width: 401px){
-  #nav_mobile{
-    display: none;
-  }
-
-  #mobile_cards {
-    display: none;
-  }
-}
 
 @media only screen and (max-width: 400px) {
 
+  /* Navigation Mobile */
   #nav {
     display: none;
   }
@@ -356,7 +327,10 @@ nav li:nth-child(4n) {
     vertical-align: middle;
   }
 
-  /* HERO */
+  /* Section, Container, and Banner Styles Mobile */
+  .section_header {
+    padding: 32px 0px 16px 0px;
+  }
 
   .banner .container {
     display: flex;
@@ -387,22 +361,18 @@ nav li:nth-child(4n) {
     padding: 32px 0px 24px 0px;
   }
 
+  /* Hyperlinks Mobile */
   .link_button {
     margin: 0px;
   }
 
-
-  /* KP */
+  /* Cards Wide Mobile */
   #desktop_cards {
     display: none;
   }
 
-  .keep_practicing .container {
-    background-color: #ffffff;
-  }
-
   #mobile_cards {
-    border-bottom: 1px solid #e0e2e2;
+    border-bottom: 1px solid #E0E2E2;
   }
 
   #mobile_cards .card_wide {
@@ -410,7 +380,6 @@ nav li:nth-child(4n) {
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
-
   }
 
   #mobile_cards .card_wide img {
@@ -421,94 +390,97 @@ nav li:nth-child(4n) {
     overflow: hidden;
   }
 
-  #mobile_cards .card_wide_text{
+  #mobile_cards .card_wide_text {
     width: 100%;
     height: 100%;
     padding: 16px;
-
   }
 
-  /* SL */
-
-  @media only screen and (max-width: 400px) {
-    .card_grid_tall {
-      padding: 0px 6px 32px 6px;
-    }
-    .card_tall{
-      width: 42%;
-      margin: 0px 12px 216px 12px;
-    }
+  /* Cards Tall Mobile */
+  .card_grid_tall {
+    padding: 0px 6px 32px 6px;
   }
 
-  @media only screen and (max-width: 400px) {
-
-    .section_header {
-      padding: 32px 0px 16px 0px;
-
-    }
-
-    #start_learning{
-      background-color: #ffffff;
-    }
-
-    #thesis_exhibit{
-      background-color: #ffffff;
-    }
-
-    .start_learning .container {
-      background-color: #ffffff;
-    }
-
-    .card_tall{
-      width: 90%;
-      height: auto;
-      margin: 0px 0px 8px 0px;
-
-    }
-
-    .card_tall_text {
-      height: auto;
-      padding: 16px 16px 24px 16px;
-      background-color: #eaebec;
-    }
-
-    .card_tall img {
-      display: none;
-    }
+  .card_tall {
+    width: 42%;
+    margin: 0px 12px 216px 12px;
+    width: 90%;
+    height: auto;
+    margin: 0px 0px 8px 0px;
   }
 
-@media only screen and (min-width: 400px) {
-  .mobile_nav {
+  .card_tall img {
     display: none;
   }
-}
 
-@media only screen and (max-width: 400px) {
+  .card_tall_text {
+    height: auto;
+    padding: 16px 16px 24px 16px;
+    background-color: #eaebec;
+  }
 
-}
+  /* Keep Practicing Mobile */
+  .keep_practicing .container {
+    background-color: #FFFFFF;
+  }
 
-  /* THESIS */
+  /* Start Learning Mobile */
+  #start_learning {
+    background-color: #ffffff;
+  }
+
+  .start_learning .container {
+    background-color: #ffffff;
+  }
+
+  /* Thesis Mobile */
+  #thesis_exhibit {
+    background-color: #ffffff;
+  }
 
   .thesis .banner_left {
     width: 100%;
   }
 
-  .thesis .banner_left h3, h5{
+  .thesis .banner_left h3, h5 {
     display:none;
   }
 
-  .thesis .banner_right{
+  .thesis .banner_right {
     display:none;
   }
 
-#footer nav {
+  /* Footer Mobile */
+  #footer nav {
     display: none;
   }
 
-#footer .bar_left {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+  #footer .bar_left {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
 }
+
+@media only screen and (min-width: 401px) {
+
+  /* Desktop Only Styles */
+  .card_wide {
+    border: 1px solid #E0E2E2;
+  }
+
+  .card_wide:nth-child(3n) {
+    background-color: #D8D8D8;
+  }
+
+  /* Hide On Desktop */
+  #nav_mobile{
+    display: none;
+  }
+
+  #mobile_cards {
+    display: none;
+  }
 
 }
