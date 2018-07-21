@@ -311,9 +311,36 @@ nav li:nth-child(4n) {
   background-color: #d8d8d8;
 }
 
+.mobile_nav {
+  flex-direction: row;
+}
+
 /* Responsive Styles */
 
+
+
+
+
 @media only screen and (max-width: 400px) {
+
+  #nav {
+    display: none;
+  }
+
+  #nav_mobile {
+    width: 100%;
+    height: 64px;
+  }
+
+  nav li {
+    display: inline-block;
+    text-align: center;
+    margin: 16px auto;
+    padding: 0px 36px;
+    vertical-align: middle;
+  }
+
+  }
 
   /* HERO */
 
