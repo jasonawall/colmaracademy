@@ -3,7 +3,6 @@ html {
   font-size: 16px;
 }
 
-
 body {
   background: #4a4a4a;
   font-family: "Georgia", sans-serif;
@@ -23,9 +22,7 @@ body {
   justify-content: center;
 }
 
-#start_learning{
-  background-color: #eaebec;
-}
+
 
 #thesis_exhibit{
   background-color: #f3f5f5;
@@ -293,6 +290,10 @@ nav li:nth-child(4n) {
   background-color: #eaebec;
 }
 
+#start_learning{
+  background-color: #eaebec;
+}
+
 /* Thesis Exhibit */
 .thesis .container {
   background-color: #f3f5f5;
@@ -392,7 +393,7 @@ nav li:nth-child(4n) {
 
 
   /* KP */
-  #large_cards {
+  #desktop_cards {
     display: none;
   }
 
