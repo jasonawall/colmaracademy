@@ -475,7 +475,7 @@ nav li:nth-child(4n) {
   }
 
   /* Hide On Desktop */
-  #nav_mobile{
+  #nav_mobile {
     display: none;
   }
 
