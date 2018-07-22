@@ -208,7 +208,7 @@ a:hover {
 .card_tall {
   width: 30%;
   height: 150px;
-  margin: 0px 16px 226px 16px;
+  margin: 0px 16px 276px 16px;
 }
 
 .card_tall_text {
@@ -219,8 +219,10 @@ a:hover {
 
 .card_tall img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
+  vertical-align: bottom;
+  border-bottom: solid 2px #B0BEC5;
 }
 
 /* Header Styles */
@@ -359,6 +361,13 @@ nav li:nth-child(4n) {
 
 #footer a {
   font-size: 0.9rem;
+  color: #FFFFFF;
+}
+
+#footer a:hover{
+    font-weight: bold;
+    color: #0097A7;
+    transition: all 0.3s ease-in;
 }
 
 /* Responsive Styles */
@@ -479,6 +488,10 @@ nav li:nth-child(4n) {
     background-color: #CFD8DC;
   }
 
+  .card_tall_text h5{
+    display: none;
+  }
+
   /* Keep Practicing Mobile */
   .keep_practicing .container {
     background-color: #37474F;
@@ -487,6 +500,10 @@ nav li:nth-child(4n) {
   /* Start Learning Mobile */
   #start_learning {
     background-color: #263238;
+  }
+
+  #start_learning .banner_left {
+    display:none;
   }
 
   .start_learning .container {
@@ -502,12 +519,16 @@ nav li:nth-child(4n) {
     width: 100%;
   }
 
-  .thesis .banner_left h3, h5 {
+  .thesis_text {
     display:none;
   }
 
   .thesis .banner_right {
     display:none;
+  }
+
+  .thesis video {
+    margin-bottom: 24px;
   }
 
   /* Footer Mobile */
@@ -517,8 +538,9 @@ nav li:nth-child(4n) {
 
   #footer .bar_left {
     width: 100%;
-    margin: 0 auto;
-    text-align: center;
+    height: 0px;
+    margin: 16px auto;
+    background-color: #263238;
   }
 
 }
