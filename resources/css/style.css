@@ -369,9 +369,9 @@ nav li:nth-child(4n) {
 }
 
 #footer a:hover{
-    font-weight: bold;
-    color: #0097A7;
-    transition: all 0.3s ease-in;
+  font-weight: bold;
+  color: #0097A7;
+  transition: all 0.3s ease-in;
 }
 
 /* Responsive Styles */
